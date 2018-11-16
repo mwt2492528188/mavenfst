@@ -21,11 +21,14 @@
 		</dependency>
 		<!--sping依赖 -->
 
-		<dependency>
+
+
+<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>4.2.5.RELEASE</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
