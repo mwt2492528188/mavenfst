@@ -3,7 +3,8 @@ package com.listener;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-
+import javax.servlet.annotation.WebListener;
+@WebListener
 public class InitListener implements ServletContextListener {
 
 	@Override
@@ -18,7 +19,7 @@ public class InitListener implements ServletContextListener {
 		ServletContext context = arg0.getServletContext();
 		context.setAttribute("cxt", context.getContextPath());
 		context.setAttribute("css", context.getContextPath()+"/css/");
-		context.setAttribute("cxt", context.getContextPath()+"/js/");
+		context.setAttribute("js", context.getContextPath()+"/js/");
 
 	}
 
