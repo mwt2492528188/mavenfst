@@ -15,7 +15,7 @@ import com.bean.Goods;
 import com.service.GoodsService;
 
 @Controller
-public class GoodsController {
+public class GoodsController {//oneplus
 
 	@Resource(name = "goodsServiceImp")
 	GoodsService goodsService;// 依赖service层
