@@ -13,6 +13,7 @@
 	<!-- 配置整合mybatis过程 -->
 	<!-- 自动扫描service层 -->
 	<context:component-scan base-package="com.service" />
+	
 
 	<!--========配置基于Mybatis的事务切面类================ -->
 	<!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->

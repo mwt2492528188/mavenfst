@@ -17,7 +17,10 @@
 	<context:component-scan base-package="com.controller" />
 	<!--启用MVC注解功能，否则不能访问spring控制器(Controller) -->
 	<mvc:annotation-driven></mvc:annotation-driven>
-
+	<!--启用MVC注解功能 增加了下面的<mvc:resources >必须使用，否则不能访问spring控制器(Controller) -->
+	<!-- 默认生产路径 -->
+	 <mvc:redirect-view-controller
+		redirect-url="common/home" path="/"/>
 	<!-- 配置视图解析器 如何把handler 方法返回值解析为实际的物理视图 -->
 	<!-- Controller处理结束后需要跳转到结果页面，类似于Struts2的action处理结束后需要根据result跳转一样 -->
 	<bean
