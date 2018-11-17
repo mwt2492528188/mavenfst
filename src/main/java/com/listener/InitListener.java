@@ -20,6 +20,7 @@ public class InitListener implements ServletContextListener {
 		context.setAttribute("cxt", context.getContextPath());
 		context.setAttribute("css", context.getContextPath()+"/css/");
 		context.setAttribute("js", context.getContextPath()+"/js/");
+		context.setAttribute("img", context.getContextPath()+"/images/");
 
 	}
 
